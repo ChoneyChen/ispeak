@@ -1,0 +1,1239 @@
+{
+  "version": 1,
+  "target": "IELTS Speaking",
+  "description": "Reusable teaching framework; original practice material, not an official exam question bank.",
+  "chapters": [
+    {
+      "id": 1,
+      "part": 1,
+      "title": "My studies & identity",
+      "subtitle": "身份、专业或工作与日常学习",
+      "shortTitle": "身份·学习",
+      "grammar": [
+        {
+          "id": "G001",
+          "title": "be 动词：身份、状态与否定",
+          "level": "A1",
+          "pattern": "I am / You are / It is; am not / isn't / aren't",
+          "note": "am/is/are 后接身份、状态、地点；不要在 be 后再加普通动词原形。"
+        },
+        {
+          "id": "G002",
+          "title": "基础句型：主谓宾与主系表",
+          "level": "A1",
+          "pattern": "S + V + O / S + V + complement",
+          "note": "先保证句子主干完整，再添加原因、时间和例子；不要用中文的“因为……所以……”直译成双连词。"
+        },
+        {
+          "id": "G003",
+          "title": "人称代词、宾格和所有格",
+          "level": "A1",
+          "pattern": "I / me / my / mine; we / us / our / ours",
+          "note": "I 作主语，me 作宾语；my 后要接名词，mine 单独使用。"
+        },
+        {
+          "id": "G004",
+          "title": "冠词 a/an/the 与零冠词",
+          "level": "A1–B1",
+          "pattern": "a/an + 单数可数；the + 特指；零冠词 + 泛指复数/不可数",
+          "note": "专业、学科的泛称一般不用 the；第一次提到一项具体事物常用 a/an。"
+        },
+        {
+          "id": "G005",
+          "title": "主谓一致与三单 -s",
+          "level": "A1–B1",
+          "pattern": "he/she/it + works; people work; everyone has",
+          "note": "口语高分仍要求基础准确：everyone/someone/every student 后接单数谓语；people 用复数。"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "part": 1,
+      "title": "Hometown & accommodation",
+      "subtitle": "家乡、迁居与居住环境",
+      "shortTitle": "家乡·住房",
+      "grammar": [
+        {
+          "id": "G006",
+          "title": "there is / there are：存在句",
+          "level": "A1",
+          "pattern": "There is + 单数/不可数；There are + 复数",
+          "note": "有/没有某物用 there be，比反复说“my hometown has”更自然。"
+        },
+        {
+          "id": "G007",
+          "title": "have / has / have got：拥有与特征",
+          "level": "A1–A2",
+          "pattern": "have / has + object; have got / has got",
+          "note": "描述城市、房间、设备的特征；have got 较口语，但不要在同一句中机械混用。"
+        },
+        {
+          "id": "G008",
+          "title": "this/that/these/those：指示与对比",
+          "level": "A1",
+          "pattern": "this/these 近；that/those 远；one/ones 替代",
+          "note": "口语中用 this place / that area / these days 自然承接上下文。"
+        },
+        {
+          "id": "G009",
+          "title": "地点、时间介词 in/on/at 与常用搭配",
+          "level": "A1–B1",
+          "pattern": "in a city / on a street / at university; in 2026 / on Monday / at night",
+          "note": "介词高度依赖搭配；把整块词组读熟比记中文对应更有用。"
+        },
+        {
+          "id": "G010",
+          "title": "比较级与最高级",
+          "level": "A2",
+          "pattern": "-er / more ... than; the -est / the most; as ... as",
+          "note": "避免“more better”；比较对象要可比。用 a bit / much / far 增加自然度。"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "part": 1,
+      "title": "Routines & time",
+      "subtitle": "工作、学习与日常节奏",
+      "shortTitle": "日常·时间",
+      "grammar": [
+        {
+          "id": "G011",
+          "title": "一般现在时：习惯与事实",
+          "level": "A1–A2",
+          "pattern": "I usually do; he often does; don't / doesn't; Do you...?",
+          "note": "讲规律性行为、事实和喜好；不是“现在正在做”的意思。"
+        },
+        {
+          "id": "G012",
+          "title": "一般现在时疑问句与否定句",
+          "level": "A1–A2",
+          "pattern": "Do/Does + S + V?; S + don't/doesn't + V",
+          "note": "一定记住 does 后动词回原形，不能说 Does he studies。"
+        },
+        {
+          "id": "G013",
+          "title": "频率副词与时间表达",
+          "level": "A2",
+          "pattern": "always / usually / often / sometimes / hardly ever / never",
+          "note": "频率副词常放在实义动词前、be 后；never 本身否定，不能再加 don't。"
+        },
+        {
+          "id": "G014",
+          "title": "现在进行时：正在发生与暂时安排",
+          "level": "A2",
+          "pattern": "am/is/are + V-ing; not ...; Are you ...?",
+          "note": "用于说话时、这段时间的临时行为；区别于一般现在时的长期习惯。"
+        },
+        {
+          "id": "G015",
+          "title": "状态动词与现在简单/进行时对照",
+          "level": "A2–B1",
+          "pattern": "know / believe / prefer / own (通常不用进行时)",
+          "note": "I know 而非 I'm knowing；但 I'm thinking about... 是“正在考虑”，语义不同。"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "part": 1,
+      "title": "Food, shopping & money",
+      "subtitle": "饮食、购物与消费习惯",
+      "shortTitle": "饮食·消费",
+      "grammar": [
+        {
+          "id": "G016",
+          "title": "可数、不可数与复数",
+          "level": "A1–B1",
+          "pattern": "an apple / two apples; advice, information, equipment 不可数",
+          "note": "口语常错：an advice / informations / equipments 均不规范。"
+        },
+        {
+          "id": "G017",
+          "title": "some/any/no 与复合不定代词",
+          "level": "A2",
+          "pattern": "some / any; someone / anyone / nobody",
+          "note": "疑问句请求或主动提供可以用 some：Would you like some...?"
+        },
+        {
+          "id": "G018",
+          "title": "much/many/a lot of/few/little",
+          "level": "A2–B1",
+          "pattern": "many + 可数复数; much + 不可数; a few/a little 正向",
+          "note": "few/little 常含“太少”语气，a few/a little 则表示“有一些”。"
+        },
+        {
+          "id": "G019",
+          "title": "动名词与不定式：喜欢、计划、避免",
+          "level": "A2–B2",
+          "pattern": "enjoy/avoid + V-ing; want/plan/decide + to V",
+          "note": "先按动词记搭配，而不是所有动词都强行套 to do 或 doing。"
+        },
+        {
+          "id": "G020",
+          "title": "礼貌请求与提议",
+          "level": "A2–B1",
+          "pattern": "Could you...? / Would you mind V-ing...? / Shall we...?",
+          "note": "Could 比 Can 往往更委婉；Would you mind 后接 V-ing。"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "part": 1,
+      "title": "Phones, internet & AI tools",
+      "subtitle": "科技工具与上网习惯",
+      "shortTitle": "科技·网络",
+      "grammar": [
+        {
+          "id": "G021",
+          "title": "现在完成时：经历、影响与结果",
+          "level": "B1",
+          "pattern": "have/has + past participle; haven't; Have you...?",
+          "note": "过去发生但与现在相关，或不说具体过去时间；have gone / have been 区别。"
+        },
+        {
+          "id": "G022",
+          "title": "ever/never：是否有过某种经历",
+          "level": "B1",
+          "pattern": "Have you ever V3? / I've never V3.",
+          "note": "never 已带否定；回答“从未”不说 I haven't never。"
+        },
+        {
+          "id": "G023",
+          "title": "already/yet/just 与位置",
+          "level": "B1",
+          "pattern": "have already V3 / haven't V3 yet / have just V3",
+          "note": "yet 常在疑问和否定句末，already 多在助动词后，just 表示刚刚。"
+        },
+        {
+          "id": "G024",
+          "title": "for/since：从过去持续到现在",
+          "level": "B1",
+          "pattern": "have V3 for + 时长 / since + 起点",
+          "note": "for three years / since 2023；持续状态可说 have lived，不能随意用 have started for。"
+        },
+        {
+          "id": "G025",
+          "title": "现在完成进行时：持续投入与未完事项",
+          "level": "B1–B2",
+          "pattern": "have/has been + V-ing; haven't been; Have you been...?",
+          "note": "强调持续进行的过程；完成时强调结果，完成进行时强调过程和时长。"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "part": 1,
+      "title": "Friends, family & teamwork",
+      "subtitle": "家人、朋友与团队合作",
+      "shortTitle": "家庭·团队",
+      "grammar": [
+        {
+          "id": "G026",
+          "title": "一般过去时：过去发生的事件",
+          "level": "A2",
+          "pattern": "V-ed / irregular V2; was / were",
+          "note": "讲过去具体经历，时间已结束；规则和不规则动词都要能脱口而出。"
+        },
+        {
+          "id": "G027",
+          "title": "过去否定句和疑问句 did",
+          "level": "A2",
+          "pattern": "didn't + V; Did + S + V?",
+          "note": "did 出现后实义动词必须回原形：didn't went 错，应是 didn't go。"
+        },
+        {
+          "id": "G028",
+          "title": "过去进行时：过去某时正在做",
+          "level": "B1",
+          "pattern": "was/were + V-ing; wasn't; Were you...?",
+          "note": "给故事铺背景，或描述过去特定时刻正在进行的动作。"
+        },
+        {
+          "id": "G029",
+          "title": "一般过去 vs 过去进行：背景与打断",
+          "level": "B1",
+          "pattern": "was V-ing when V2; while was V-ing, ...",
+          "note": "when 常引出短动作，while 常强调同时进行的背景；重点是事件关系。"
+        },
+        {
+          "id": "G030",
+          "title": "used to / would：过去的习惯",
+          "level": "B1",
+          "pattern": "used to V; didn't use to V; Did you use to V?",
+          "note": "used to 可表旧状态和习惯；would 主要叙述反复过去动作，不直接表旧状态。"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "part": 1,
+      "title": "Travel & transport",
+      "subtitle": "坐车、出行与旅行计划",
+      "shortTitle": "交通·出行",
+      "grammar": [
+        {
+          "id": "G031",
+          "title": "will：即时决定、预测与承诺",
+          "level": "A2–B1",
+          "pattern": "will / won't + V; Will you...?",
+          "note": "will 不等于所有将来；即兴决策、承诺、判断可优先用它。"
+        },
+        {
+          "id": "G032",
+          "title": "be going to：事先打算与有迹象的预测",
+          "level": "A2",
+          "pattern": "am/is/are going to + V",
+          "note": "事先有计划/明确证据；和 will 的区别是语境，不必机械绝对化。"
+        },
+        {
+          "id": "G033",
+          "title": "现在进行时表示已安排的将来",
+          "level": "B1",
+          "pattern": "am meeting / are leaving + future time",
+          "note": "多用于已经有安排的计划；与 going to 相比，安排感更强。"
+        },
+        {
+          "id": "G034",
+          "title": "一般现在时表示固定时刻表",
+          "level": "B1",
+          "pattern": "The train leaves at... / The shop opens at...",
+          "note": "公开时刻表、长期固定的时间安排，即使未来也常用一般现在时。"
+        },
+        {
+          "id": "G035",
+          "title": "第一条件句与将来时间从句",
+          "level": "B1",
+          "pattern": "If + present, will + V; when/as soon as + present, future",
+          "note": "条件/时间从句中通常不用 will：If it rains, we'll stay in。"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "part": 1,
+      "title": "Hobbies, media & culture",
+      "subtitle": "兴趣、影视与休闲",
+      "shortTitle": "兴趣·媒体",
+      "grammar": [
+        {
+          "id": "G036",
+          "title": "-ed 与 -ing 形容词",
+          "level": "A2–B1",
+          "pattern": "interested / interesting; bored / boring",
+          "note": "-ed 常描述感受者，-ing 常描述引发感受的事物。"
+        },
+        {
+          "id": "G037",
+          "title": "程度副词与语气调整",
+          "level": "A2–B1",
+          "pattern": "quite / rather / fairly / pretty / incredibly + adj",
+          "note": "口语里 naturally hedge：pretty good、a bit dull；avoid endless 'very very'。"
+        },
+        {
+          "id": "G038",
+          "title": "限定性定语从句 who/which/that",
+          "level": "B1–B2",
+          "pattern": "a person who... / a film that... / a tool which...",
+          "note": "用于具体说明“哪一个”；口语中宾语关系代词常可省略。"
+        },
+        {
+          "id": "G039",
+          "title": "whose/where/when：关系词扩展",
+          "level": "B2",
+          "pattern": "a person whose... / a place where... / a time when...",
+          "note": "whose 表示所属；where/when 引出地点或时间的从句，不只是“那个地方”的重复。"
+        },
+        {
+          "id": "G040",
+          "title": "非限定性定语从句与补充说明",
+          "level": "B2",
+          "pattern": "noun, which/who... , ...",
+          "note": "逗号内是附加信息；不可随便用 that；which 可概括前句整体情况。"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "part": 1,
+      "title": "Health, sport & wellbeing",
+      "subtitle": "运动、健康与生活平衡",
+      "shortTitle": "运动·健康",
+      "grammar": [
+        {
+          "id": "G041",
+          "title": "can/could/be able to：能力与可能",
+          "level": "A2–B1",
+          "pattern": "can V / could V / have been able to V",
+          "note": "can 没有标准完成式，用 have been able to；could 可表过去通常能力。"
+        },
+        {
+          "id": "G042",
+          "title": "should/ought to 与建议语气",
+          "level": "B1",
+          "pattern": "should / shouldn't / ought to + V",
+          "note": "建议不是命令；I suppose / probably / might want to 能更柔和。"
+        },
+        {
+          "id": "G043",
+          "title": "must / have to / mustn't：义务和禁止",
+          "level": "B1",
+          "pattern": "must V / have to V / mustn't V",
+          "note": "mustn't = 禁止；don't have to = 不必，两者意思截然不同。"
+        },
+        {
+          "id": "G044",
+          "title": "don't have to / needn't / be allowed to",
+          "level": "B1",
+          "pattern": "don't have to V; needn't V; be allowed to V",
+          "note": "不必、无需与不被允许要明确区分。"
+        },
+        {
+          "id": "G045",
+          "title": "may/might/could：不确定性与婉转推测",
+          "level": "B1–B2",
+          "pattern": "may/might/could + V",
+          "note": "口语 7.5+ 常需要控制确定程度，而不是每句都说 definitely。"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "part": 1,
+      "title": "Nature & the environment",
+      "subtitle": "环保、天气和能源",
+      "shortTitle": "自然·环保",
+      "grammar": [
+        {
+          "id": "G046",
+          "title": "一般时态被动语态",
+          "level": "B1",
+          "pattern": "am/is/are + V3; was/were + V3",
+          "note": "侧重行动对象；不知道/不需提执行者时常用被动。"
+        },
+        {
+          "id": "G047",
+          "title": "进行时、完成时被动",
+          "level": "B2",
+          "pattern": "is being V3 / has been V3 / had been V3",
+          "note": "关注事情“正被做/已经被做”；避免把完成时和被动语序写反。"
+        },
+        {
+          "id": "G048",
+          "title": "情态动词被动",
+          "level": "B2",
+          "pattern": "should/must/can/might + be + V3",
+          "note": "讨论公共建议和政策十分常用；不要写 should be do。"
+        },
+        {
+          "id": "G049",
+          "title": "get + V3：事件性被动",
+          "level": "B1–B2",
+          "pattern": "get damaged / get caught / get repaired",
+          "note": "get-passive 常比 be-passive 更口语，强调事情发生、意外或变化。"
+        },
+        {
+          "id": "G050",
+          "title": "have/get something done：请人处理",
+          "level": "B2",
+          "pattern": "have/get + object + V3",
+          "note": "表请人完成事情：I had my laptop repaired，不是“我亲自修”。"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "part": 1,
+      "title": "Career, learning & ambitions",
+      "subtitle": "未来职业与持续学习",
+      "shortTitle": "职业·目标",
+      "grammar": [
+        {
+          "id": "G051",
+          "title": "过去完成时：过去的过去",
+          "level": "B2",
+          "pattern": "had + V3; hadn't; Had you...?",
+          "note": "两个过去事件：先发生的常用 had V3；没必要每个过去动作都用过去完成。"
+        },
+        {
+          "id": "G052",
+          "title": "过去完成进行时：持续到过去某一点",
+          "level": "B2–C1",
+          "pattern": "had been + V-ing",
+          "note": "强调过去某时之前一直在进行的活动，多用于故事交代背景。"
+        },
+        {
+          "id": "G053",
+          "title": "将来进行时：未来特定时间正在做",
+          "level": "B2",
+          "pattern": "will be + V-ing; won't be; Will you be...?",
+          "note": "表示在未来某时进行的活动，也用于较礼貌地询问安排。"
+        },
+        {
+          "id": "G054",
+          "title": "将来完成时：截至某未来时点完成",
+          "level": "B2–C1",
+          "pattern": "will have + V3; won't have; Will you have...?",
+          "note": "by + 未来时间点；说目标结果；不建议在短回答里频繁硬塞。"
+        },
+        {
+          "id": "G055",
+          "title": "将来完成进行时：未来时点的持续时长",
+          "level": "C1",
+          "pattern": "will have been + V-ing + for...",
+          "note": "较少见，掌握识别和自然使用即可；高分不需要刻意炫技。"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "part": 1,
+      "title": "Childhood, festivals & memorable moments",
+      "subtitle": "童年、节日与记忆",
+      "shortTitle": "童年·节日",
+      "grammar": [
+        {
+          "id": "G056",
+          "title": "现在完成时与一般过去时的时间界限",
+          "level": "B1–B2",
+          "pattern": "I've visited... / I visited ... last year",
+          "note": "有具体已结束时间（last year / in 2024）优先过去时；经历与现状连接可用完成时。"
+        },
+        {
+          "id": "G057",
+          "title": "be used to / get used to + V-ing",
+          "level": "B1–B2",
+          "pattern": "be used to + noun / V-ing; get used to + V-ing",
+          "note": "不是 used to V（过去常常）；be used to doing = 已习惯。"
+        },
+        {
+          "id": "G058",
+          "title": "so ... that / such ... that：程度与结果",
+          "level": "B2",
+          "pattern": "so + adj/adv + that; such + (a/an) + adj + noun + that",
+          "note": "so 后接形容词/副词；such 后接名词性词组。"
+        },
+        {
+          "id": "G059",
+          "title": "too ... to / ... enough to",
+          "level": "B1–B2",
+          "pattern": "too + adj + to V; adj + enough + to V",
+          "note": "too ... to 常表过度而做不到；enough 在形容词后、名词前。"
+        },
+        {
+          "id": "G060",
+          "title": "because / so / although / but：基础复合句",
+          "level": "A2–B1",
+          "pattern": "because + clause; although + clause, main clause",
+          "note": "避免 because...so... 和 although...but... 同句双连词。"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "part": 2,
+      "title": "A person who influenced me",
+      "subtitle": "影响自己的老师、同事或导师",
+      "shortTitle": "影响我的人",
+      "grammar": [
+        {
+          "id": "G061",
+          "title": "叙事时间线：at first / later / eventually",
+          "level": "B1–B2",
+          "pattern": "at first → after a while → eventually; by the time...",
+          "note": "不是语法时态本身，而是支撑复杂叙事的时间衔接；配合过去时使用。"
+        },
+        {
+          "id": "G062",
+          "title": "宾语关系代词的省略",
+          "level": "B2",
+          "pattern": "the advice (that) she gave me / the person (who) I met",
+          "note": "关系代词充当宾语时多可省略，口语更流畅；做主语时不能随便删。"
+        },
+        {
+          "id": "G063",
+          "title": "强调助动词 do/did",
+          "level": "B2",
+          "pattern": "I do believe... / I did enjoy...",
+          "note": "do/did + 动词原形表达真诚强调，适度使用；不必每句都加。"
+        },
+        {
+          "id": "G064",
+          "title": "强调句 It was ... that/who ...",
+          "level": "B2–C1",
+          "pattern": "It was X that/who did Y",
+          "note": "强调人物、时间、地点或事件原因；自然强调关键转折，不要机械加长。"
+        },
+        {
+          "id": "G065",
+          "title": "What 从句作主语/表语焦点",
+          "level": "B2–C1",
+          "pattern": "What I learned was... / What matters is...",
+          "note": "用 what 概括一整件事；谓语单复数按意义安排，别过量重复。"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "part": 2,
+      "title": "A difficult problem I solved",
+      "subtitle": "一次真实的挑战与解决过程",
+      "shortTitle": "解决难题",
+      "grammar": [
+        {
+          "id": "G066",
+          "title": "第三条件句：与过去事实相反",
+          "level": "B2–C1",
+          "pattern": "If + had V3, would/could/might have V3",
+          "note": "讨论“当时如果……结果本可以……”，千万别写 if I would have。"
+        },
+        {
+          "id": "G067",
+          "title": "should/could/might have done：过去评价",
+          "level": "B2",
+          "pattern": "should have V3 / could have V3 / might have V3",
+          "note": "should have 往往含后悔或批评；could have 表当时本有可能。"
+        },
+        {
+          "id": "G068",
+          "title": "wish + 过去完成时：对过去的遗憾",
+          "level": "B2–C1",
+          "pattern": "I wish I had V3 / If only I had V3",
+          "note": "wish + had V3 是“希望过去不同”，不能用 wish I would have 表同一意思。"
+        },
+        {
+          "id": "G069",
+          "title": "混合条件句：过去原因、现在结果",
+          "level": "C1",
+          "pattern": "If + had V3, would V now",
+          "note": "过去不同→现在不同，尤其适合成长与反思。"
+        },
+        {
+          "id": "G070",
+          "title": "让步与转折：even though / despite",
+          "level": "B2",
+          "pattern": "even though + clause; despite + noun/V-ing",
+          "note": "尽管有困难仍采取行动。despite 后面不要直接接完整句子。"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "part": 2,
+      "title": "A place I would recommend",
+      "subtitle": "自己熟悉并愿意推荐的地点",
+      "shortTitle": "推荐地点",
+      "grammar": [
+        {
+          "id": "G071",
+          "title": "现在分词短语作后置定语",
+          "level": "B2",
+          "pattern": "people living nearby / a path leading to...",
+          "note": "V-ing 短语紧接修饰对象，表示主动/进行；别产生悬垂修饰。"
+        },
+        {
+          "id": "G072",
+          "title": "过去分词短语作后置定语",
+          "level": "B2",
+          "pattern": "a bridge built in... / houses painted white",
+          "note": "V3 多表被动或完成，适合描述建筑、场所与设计。"
+        },
+        {
+          "id": "G073",
+          "title": "分词状语：Walking / Having ...",
+          "level": "C1",
+          "pattern": "Walking through..., I noticed... / Having finished..., I ...",
+          "note": "逻辑主语必须与主句一致；难度较高但适合自然的故事表达。"
+        },
+        {
+          "id": "G074",
+          "title": "with + 名词 + 补足语",
+          "level": "B2–C1",
+          "pattern": "with the sun setting / with its doors open / with ... done",
+          "note": "用来补充现场背景或状态，口语叙事很有效。"
+        },
+        {
+          "id": "G075",
+          "title": "同位语与精确名词短语",
+          "level": "B2",
+          "pattern": "my hometown, a city in... / my colleague, a researcher...",
+          "note": "通过插入简短定义让考官理解陌生地点，不必长篇解释。"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "part": 2,
+      "title": "A trip or special day",
+      "subtitle": "一次出行、活动或特别的日子",
+      "shortTitle": "特别旅程",
+      "grammar": [
+        {
+          "id": "G076",
+          "title": "直接引语与间接引语基础",
+          "level": "B1–B2",
+          "pattern": "She said, '...' → She said (that) ...",
+          "note": "复述别人的话时不必硬背原句；注意人称、时间视角和时态。"
+        },
+        {
+          "id": "G077",
+          "title": "say / tell / ask 的结构",
+          "level": "B1–B2",
+          "pattern": "say something; tell somebody something; ask somebody to V",
+          "note": "不能说 tell to me（常规语境应 tell me）；ask sb to do 用于请求。"
+        },
+        {
+          "id": "G078",
+          "title": "间接疑问句：陈述语序",
+          "level": "B2",
+          "pattern": "Do you know where it is? / I wonder if...",
+          "note": "不能说 Do you know where is it?；间接疑问句使用陈述语序。"
+        },
+        {
+          "id": "G079",
+          "title": "过去将来时 would / was going to",
+          "level": "B2",
+          "pattern": "said I would V; was going to V, but...",
+          "note": "在过去时间点谈“当时的未来”；讲计划如何改变很有用。"
+        },
+        {
+          "id": "G080",
+          "title": "be about to / on the point of：即将发生",
+          "level": "B2",
+          "pattern": "be about to V / be on the point of V-ing",
+          "note": "叙事中的临界一刻；通常和 when 引出突发转折。"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "part": 2,
+      "title": "A useful invention or device",
+      "subtitle": "日常设备与有用的发明",
+      "shortTitle": "有用设备",
+      "grammar": [
+        {
+          "id": "G081",
+          "title": "make / let / have 使役结构",
+          "level": "B1–B2",
+          "pattern": "make/let/have + sb + V",
+          "note": "主动结构后用动词原形：make me think；被动 be made to V 例外。"
+        },
+        {
+          "id": "G082",
+          "title": "get / help / encourage + sb + to do",
+          "level": "B1–B2",
+          "pattern": "get/encourage sb to V; help sb (to) V",
+          "note": "get sb to do = 设法让某人做；help 后 to 可省。"
+        },
+        {
+          "id": "G083",
+          "title": "感官动词 see/hear + V / V-ing",
+          "level": "B2",
+          "pattern": "see sb do (全过程) / doing (进行中的片段)",
+          "note": "两种结构重点不同；感官动词被动通常接 to V。"
+        },
+        {
+          "id": "G084",
+          "title": "stop / remember / try + V-ing vs to V",
+          "level": "B2",
+          "pattern": "stop doing / stop to do; remember doing / remember to do",
+          "note": "doing 与 to do 的意思可能完全不同：stop smoking ≠ stop to smoke。"
+        },
+        {
+          "id": "G085",
+          "title": "目的不定式与不定式后置修饰",
+          "level": "B1–B2",
+          "pattern": "to V / in order to V / something to V",
+          "note": "简洁解释“为了什么”；to do 修饰某人要做的事情也常见。"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "part": 2,
+      "title": "A project I am proud of",
+      "subtitle": "自己参与并感到自豪的项目",
+      "shortTitle": "自豪项目",
+      "grammar": [
+        {
+          "id": "G086",
+          "title": "not only ... but also ...：递进并列",
+          "level": "B2",
+          "pattern": "not only A but also B; Not only + inversion ...",
+          "note": "普通口语无需倒装；只在 Not only 置于句首时需要倒装。"
+        },
+        {
+          "id": "G087",
+          "title": "both / either / neither：两者逻辑",
+          "level": "B1–B2",
+          "pattern": "both A and B; either A or B; neither A nor B",
+          "note": "both 肯定两者；either 任选一个；neither 两者都不；就近一致注意。"
+        },
+        {
+          "id": "G088",
+          "title": "第二条件句：现在或未来的假设",
+          "level": "B2",
+          "pattern": "If + past, would/could/might + V",
+          "note": "和真实的第一条件句区别：现在与将来的假设、不太确定的可能。"
+        },
+        {
+          "id": "G089",
+          "title": "would rather / would prefer / prefer",
+          "level": "B1–B2",
+          "pattern": "would rather + V; would prefer to V; prefer V-ing to V-ing",
+          "note": "would rather 后不用 to；prefer A to B 是对比长期偏好。"
+        },
+        {
+          "id": "G090",
+          "title": "名词性结果表达：lead to / result in / enable",
+          "level": "B2–C1",
+          "pattern": "lead to + noun/V-ing; result in + noun; enable sb to V",
+          "note": "用比单纯 because...so... 更精确的因果；别过度名词化。"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "part": 2,
+      "title": "A decision I had to make",
+      "subtitle": "选择、权衡与一次转折",
+      "shortTitle": "重要决定",
+      "grammar": [
+        {
+          "id": "G091",
+          "title": "unless / as long as / provided that",
+          "level": "B2",
+          "pattern": "unless + clause; as long as + clause; provided that + clause",
+          "note": "unless = if not；as long as / provided that = 条件满足就可以。"
+        },
+        {
+          "id": "G092",
+          "title": "even if / even though：假设和事实",
+          "level": "B2",
+          "pattern": "even if = 即使（假设）；even though = 尽管（事实）",
+          "note": "两者不能完全互换：even if it rains 是假设；even though it rained 是事实。"
+        },
+        {
+          "id": "G093",
+          "title": "as if / as though：看起来仿佛",
+          "level": "B2–C1",
+          "pattern": "seem/look as if + clause; talked as if...",
+          "note": "可说事实性的 as if，也可用过去式表达非事实、主观距离。"
+        },
+        {
+          "id": "G094",
+          "title": "otherwise / or else：替代后果",
+          "level": "B2",
+          "pattern": "Do X; otherwise, Y will... / X, or else Y...",
+          "note": "展示决策的必要性与结果；otherwise 可承接条件，不一定要 if。"
+        },
+        {
+          "id": "G095",
+          "title": "must/can't/might have done：过去推断",
+          "level": "B2–C1",
+          "pattern": "must have V3 / can't have V3 / might have V3",
+          "note": "must have 是有较强证据的推断；can't have 是否定不可能。"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "part": 2,
+      "title": "A skill I learned or taught",
+      "subtitle": "自学、分享与帮助他人",
+      "shortTitle": "学会技能",
+      "grammar": [
+        {
+          "id": "G096",
+          "title": "完成式动名词 having done",
+          "level": "C1",
+          "pattern": "regret/remember + having V3; after having V3",
+          "note": "强调动名词动作早于主句；口语中可选普通 doing，不必强塞复杂结构。"
+        },
+        {
+          "id": "G097",
+          "title": "被动不定式与被动动名词",
+          "level": "B2–C1",
+          "pattern": "to be V3; being V3; having been V3",
+          "note": "在“需要被完成/避免被打断/被认可”等场景自然使用。"
+        },
+        {
+          "id": "G098",
+          "title": "keep / end up / manage to / fail to",
+          "level": "B1–B2",
+          "pattern": "keep V-ing / end up V-ing / manage to V / fail to V",
+          "note": "讲学习过程中的坚持、结果、成败，贴近日常口语。"
+        },
+        {
+          "id": "G099",
+          "title": "过去义务与不必：had to / didn't have to",
+          "level": "B1–B2",
+          "pattern": "had to V / didn't have to V / was supposed to V",
+          "note": "昨天“必须”不是 musted；didn't have to 与 mustn't 区分。"
+        },
+        {
+          "id": "G100",
+          "title": "反问与回应：isn't it / don't you think...",
+          "level": "B1–B2",
+          "pattern": "..., isn't it? / Don't you think that...?",
+          "note": "反问用于互动，而非考试套话；附加疑问句助动词与主句呼应。"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "part": 3,
+      "title": "Education & how people learn",
+      "subtitle": "教育制度与学习方式",
+      "shortTitle": "教育理念",
+      "grammar": [
+        {
+          "id": "G101",
+          "title": "泛指与限定：most / some / not all",
+          "level": "B2",
+          "pattern": "Most + plural; Not all...; A minority of...",
+          "note": "Part 3 避免“人人都……”的绝对判断；语法准确也体现观点严谨。"
+        },
+        {
+          "id": "G102",
+          "title": "the more..., the more...：双重比较",
+          "level": "B2",
+          "pattern": "The + comparative ..., the + comparative ...",
+          "note": "双重比较表示相关变化，不一定是严格因果。"
+        },
+        {
+          "id": "G103",
+          "title": "that 从句：判断、观点和证据",
+          "level": "B2",
+          "pattern": "I believe (that)... / The fact that ... suggests...",
+          "note": "that 作为内容从句引导词，口语有时可省；句子主干必须完整。"
+        },
+        {
+          "id": "G104",
+          "title": "whether / if 名词性从句与 whether...or...",
+          "level": "B2",
+          "pattern": "whether S + V; whether A or B",
+          "note": "正式名词性结构常用 whether；介词后通常用 whether，不用 if。"
+        },
+        {
+          "id": "G105",
+          "title": "what / how / why 作名词性从句",
+          "level": "B2–C1",
+          "pattern": "What schools need is...; how people learn; why this matters",
+          "note": "what 引导名词性从句并在从句内部充当成分；可作为句子的主题。"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "part": 3,
+      "title": "Artificial intelligence & society",
+      "subtitle": "AI、隐私与技术影响",
+      "shortTitle": "人工智能",
+      "grammar": [
+        {
+          "id": "G106",
+          "title": "although / even though：真实让步",
+          "level": "B2",
+          "pattern": "Although S + V, main; even though S + V,...",
+          "note": "一句承认好处再指出风险，讨论更平衡，不要搭配 but 双连词。"
+        },
+        {
+          "id": "G107",
+          "title": "while / whereas：并列对照",
+          "level": "B2",
+          "pattern": "While A..., B... / A..., whereas B...",
+          "note": "while 可表时间或对比；Part3 常用对比不同群体和利弊。"
+        },
+        {
+          "id": "G108",
+          "title": "no matter how / what / where：无论",
+          "level": "B2–C1",
+          "pattern": "no matter how + adj; no matter what + clause",
+          "note": "讨论普遍原则；适合口语观点结尾，切勿每句话都升格为口号。"
+        },
+        {
+          "id": "G109",
+          "title": "whoever / whatever / whichever 自由关系从句",
+          "level": "C1",
+          "pattern": "Whoever uses... / Whatever happens... / whichever is...",
+          "note": "代词本身在从句内起作用，口语用于泛指与选择。"
+        },
+        {
+          "id": "G110",
+          "title": "观点弱化与推测：tend to / seem to / be likely to",
+          "level": "B2–C1",
+          "pattern": "tend to V / seem to V / be likely to V",
+          "note": "“并非必然”的表达能体现事实边界，也让观点更自然。"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "part": 3,
+      "title": "Climate, energy & sustainability",
+      "subtitle": "气候、能源与可持续生活",
+      "shortTitle": "气候能源",
+      "grammar": [
+        {
+          "id": "G111",
+          "title": "because / because of / due to：原因层级",
+          "level": "B1–B2",
+          "pattern": "because + clause; because of + noun; due to + noun",
+          "note": "because of 后不要直接接完整句；因果链越清晰越好。"
+        },
+        {
+          "id": "G112",
+          "title": "so that / in order that：表达目标",
+          "level": "B2",
+          "pattern": "so that + S + can/could/will/would + V",
+          "note": "表目标而非结果；主句和从句要有清楚的目的关系。"
+        },
+        {
+          "id": "G113",
+          "title": "零条件句：普遍规律与机制",
+          "level": "B1",
+          "pattern": "If/When + present, present",
+          "note": "不是未来预测，而是惯常结果、规律或系统行为。"
+        },
+        {
+          "id": "G114",
+          "title": "被动报告结构：It is believed that...",
+          "level": "C1",
+          "pattern": "It is often argued that... / X is believed to V",
+          "note": "传递他人观点同时保持距离；“据称”不是证据，注意来源。"
+        },
+        {
+          "id": "G115",
+          "title": "which 引导整句结果与非限定关系",
+          "level": "B2–C1",
+          "pattern": "main clause, which means / which makes...",
+          "note": "which 指代整件事而非某个名词，便于自然解释后果。"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "part": 3,
+      "title": "Cities, transport & housing",
+      "subtitle": "城市化、公共交通与居住",
+      "shortTitle": "城市交通",
+      "grammar": [
+        {
+          "id": "G116",
+          "title": "虚拟语气：If I were / If cities were...",
+          "level": "B2",
+          "pattern": "If + S + were..., S would...",
+          "note": "与目前情况不符的假设；正式或考试英语常用 If I were。"
+        },
+        {
+          "id": "G117",
+          "title": "省略 if 的虚拟倒装：Were ... to ...",
+          "level": "C1",
+          "pattern": "Were + S + to V, S would...",
+          "note": "高级可用，但口语中偏正式；自然聊天用 If...were to 同样好。"
+        },
+        {
+          "id": "G118",
+          "title": "would rather + 人 + 过去式：对别人行为的期望",
+          "level": "C1",
+          "pattern": "I'd rather the city invested...",
+          "note": "与 I'd rather do 不同；I'd rather you didn't... 用过去式表达当前偏好。"
+        },
+        {
+          "id": "G119",
+          "title": "compared with / unlike / in comparison",
+          "level": "B2",
+          "pattern": "compared with + noun; unlike + noun; by comparison,...",
+          "note": "对比论证最好先说比较维度，避免跨对象比较。"
+        },
+        {
+          "id": "G120",
+          "title": "条件结果链：If...would..., meaning that...",
+          "level": "B2–C1",
+          "pattern": "If X happened, Y would..., meaning that Z...",
+          "note": "Part 3 重要的是多层推理，而不只是堆复杂句。"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "part": 3,
+      "title": "Jobs, the economy & teamwork",
+      "subtitle": "就业、职场与经济变化",
+      "shortTitle": "就业经济",
+      "grammar": [
+        {
+          "id": "G121",
+          "title": "介词 + which/whom 关系从句",
+          "level": "C1",
+          "pattern": "the field in which... / people with whom...",
+          "note": "更正式的关系从句；口语可灵活说 the field I work in。"
+        },
+        {
+          "id": "G122",
+          "title": "what = the thing(s) that：抽象主语",
+          "level": "C1",
+          "pattern": "What employers value is...; What changes is...",
+          "note": "将讨论焦点放在观点而不是“I think...I think...”。"
+        },
+        {
+          "id": "G123",
+          "title": "情态动词：现在推断 must / can't / might",
+          "level": "B2",
+          "pattern": "must be / can't be / might be + adj / V-ing",
+          "note": "讨论政策与就业不必处处确定；must 是逻辑判断，不等于“必须”。"
+        },
+        {
+          "id": "G124",
+          "title": "in spite of / regardless of / despite",
+          "level": "B2",
+          "pattern": "despite + noun/doing; regardless of + noun",
+          "note": "Part 3 谈原则时，用 regardless of 指“无论是否”；注意介词后词形。"
+        },
+        {
+          "id": "G125",
+          "title": "had better / be better off / might as well",
+          "level": "B2",
+          "pattern": "had better + V / be better off V-ing / might as well + V",
+          "note": "用于权衡实际建议；had better 带较强后果意味。"
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "part": 3,
+      "title": "Governments, rules & ethics",
+      "subtitle": "政策、规范与公共责任",
+      "shortTitle": "公共政策",
+      "grammar": [
+        {
+          "id": "G126",
+          "title": "建议式虚拟语气：that + 动词原形",
+          "level": "C1",
+          "pattern": "recommend that S (should) + V; insist that S + V",
+          "note": "英式英语可保留 should；考口语别刻意全用，熟练表达即可。"
+        },
+        {
+          "id": "G127",
+          "title": "It is essential/important that...",
+          "level": "C1",
+          "pattern": "It is essential that S (should) V / be V3",
+          "note": "描述必要性；be 原形作正式虚拟语气，不是把 is 遗漏了。"
+        },
+        {
+          "id": "G128",
+          "title": "only when / only if 置首引起倒装",
+          "level": "C1",
+          "pattern": "Only when + clause + auxiliary + S + V",
+          "note": "句首 only + 状语触发主句倒装；自然口语用普通语序亦可。"
+        },
+        {
+          "id": "G129",
+          "title": "not until ... did：强调时间转折",
+          "level": "C1",
+          "pattern": "Not until + time/clause + did + S + V",
+          "note": "倒装在主句而非 until 从句；可用较口语的 It wasn't until...that。"
+        },
+        {
+          "id": "G130",
+          "title": "it is high time + 过去式：早该做",
+          "level": "C1",
+          "pattern": "It's (high) time + S + past",
+          "note": "虽用过去式，表达现在“早该如此”，语气相对强。"
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "part": 3,
+      "title": "Media, culture & globalisation",
+      "subtitle": "传统文化、媒体与全球化",
+      "shortTitle": "文化全球化",
+      "grammar": [
+        {
+          "id": "G131",
+          "title": "however / nevertheless / on the other hand",
+          "level": "B2",
+          "pattern": "sentence. However, sentence. / ...; nevertheless, ...",
+          "note": "连接副词与 but 语法位置不同；口语适度停顿即可。"
+        },
+        {
+          "id": "G132",
+          "title": "neither ... nor ... 与否定副词倒装",
+          "level": "C1",
+          "pattern": "Neither A nor B + V / Neither do I; Nor do I",
+          "note": "neither...nor 两者都不；句首 Neither do I 为附和否定。"
+        },
+        {
+          "id": "G133",
+          "title": "not so much A as B：不是A而是B",
+          "level": "C1",
+          "pattern": "not so much A as B",
+          "note": "适合指出真正原因，带有修正和强调意味。"
+        },
+        {
+          "id": "G134",
+          "title": "nominalisation：动词观点的名词化",
+          "level": "C1",
+          "pattern": "improve → improvement; decide → decision; regulate → regulation",
+          "note": "名词化有助于抽象讨论，但英语口语仍要可听懂，别连续堆抽象名词。"
+        },
+        {
+          "id": "G135",
+          "title": "同位语 that 从句：抽象观念的内容",
+          "level": "C1",
+          "pattern": "the idea that... / the belief that... / the claim that...",
+          "note": "the idea that... 的 that 不是关系代词，而是解释“具体是什么想法”。"
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "part": 3,
+      "title": "The future of society & technology",
+      "subtitle": "未来社会、科技和人生选择",
+      "shortTitle": "未来社会",
+      "grammar": [
+        {
+          "id": "G136",
+          "title": "将来完成时表达社会变化的预测",
+          "level": "B2–C1",
+          "pattern": "By + future time, will have V3",
+          "note": "讨论未来时间节点的结果；具体时点要清楚，避免空泛“未来将已经……”。"
+        },
+        {
+          "id": "G137",
+          "title": "将来进行时表达社会常态",
+          "level": "B2",
+          "pattern": "will be V-ing; may be V-ing",
+          "note": "与将来完成对照：描述未来某时正在发生/持续的行为，不强调完成。"
+        },
+        {
+          "id": "G138",
+          "title": "rarely / seldom / hardly 句首倒装",
+          "level": "C1",
+          "pattern": "Rarely do S V...; Seldom have S V3...",
+          "note": "倒装较书面；Part3 点到为止，不能为了“高级”牺牲语气自然性。"
+        },
+        {
+          "id": "G139",
+          "title": "复杂虚拟：现在结果与过去条件",
+          "level": "C1",
+          "pattern": "If S had V3, S would V now; If S were..., would have V3",
+          "note": "混合条件句只有在时间关系明确时才自然，否则简单句更好。"
+        },
+        {
+          "id": "G140",
+          "title": "综合：让步 + 假设 + 判断 + 结果",
+          "level": "C1",
+          "pattern": "While A..., if B..., C might..., which...",
+          "note": "7.5/8 目标是自然灵活，不是每句 40 词；复杂结构和准确简单句交替。"
+        }
+      ]
+    }
+  ]
+}

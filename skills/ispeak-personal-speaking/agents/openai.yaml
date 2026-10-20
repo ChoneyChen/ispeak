@@ -1,0 +1,4 @@
+interface:
+  display_name: "iSpeak · 个人口语学习工坊"
+  short_description: "把个人经历变成话题语法教材、双语句卡与可离线使用的原生 iPhone 应用"
+  default_prompt: "使用 $ispeak-personal-speaking，根据我的真实经历生成个性化口语句库，并构建学习、背诵和间隔复习的 iPhone 应用。"

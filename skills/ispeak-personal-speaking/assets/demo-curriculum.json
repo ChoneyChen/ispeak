@@ -1,0 +1,247 @@
+{
+  "chapters": [
+    {
+      "id": 1,
+      "part": 1,
+      "title": "My studies & identity",
+      "subtitle": "身份、专业或工作与日常学习",
+      "shortTitle": "身份·学习",
+      "questions": [
+        "What do you enjoy about your daily life?",
+        "What would you like to change?"
+      ],
+      "practice": "选一句换成自己的真实信息，再开口说出一段回答。",
+      "startPage": 0,
+      "grammar": [
+        {
+          "id": "G001",
+          "title": "be 动词：身份、状态与否定",
+          "level": "A1",
+          "pattern": "I am / You are / It is; am not / isn't / aren't",
+          "note": "am/is/are 后接身份、状态、地点；不要在 be 后再加普通动词原形。",
+          "page": 0,
+          "examples": [
+            {
+              "id": "G001-1",
+              "en": "I'm an environmental science student.",
+              "zh": "我是一名环境科学专业的学生。",
+              "kind": "肯",
+              "provenance": {
+                "type": "confirmed",
+                "factIds": [
+                  "F01"
+                ]
+              }
+            },
+            {
+              "id": "G001-2",
+              "en": "Our recycling project isn't finished yet.",
+              "zh": "我们的回收项目还没有完成。",
+              "kind": "否",
+              "provenance": {
+                "type": "confirmed",
+                "factIds": [
+                  "F04"
+                ]
+              }
+            },
+            {
+              "id": "G001-3",
+              "en": "Is your room close to the main library?",
+              "zh": "你的房间离主图书馆近吗？",
+              "kind": "问",
+              "provenance": {
+                "type": "scenario",
+                "factIds": []
+              }
+            },
+            {
+              "id": "G001-4",
+              "en": "My hometown is a small coastal city.",
+              "zh": "我的家乡是一座沿海小城。",
+              "kind": "肯",
+              "provenance": {
+                "type": "confirmed",
+                "factIds": [
+                  "F02"
+                ]
+              }
+            },
+            {
+              "id": "G001-5",
+              "en": "I'm not keen on memorising definitions without understanding them.",
+              "zh": "我不喜欢在不理解的情况下死记定义。",
+              "kind": "否",
+              "provenance": {
+                "type": "confirmed",
+                "factIds": [
+                  "F03"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "G002",
+          "title": "基础句型：主谓宾与主系表",
+          "level": "A1",
+          "pattern": "S + V + O / S + V + complement",
+          "note": "先保证句子主干完整，再添加原因、时间和例子；不要用中文的“因为……所以……”直译成双连词。",
+          "page": 0,
+          "examples": [
+            {
+              "id": "G002-1",
+              "en": "I study how people affect the environment.",
+              "zh": "我学习人类如何影响环境。",
+              "kind": "肯",
+              "provenance": {
+                "type": "confirmed",
+                "factIds": [
+                  "F01"
+                ]
+              }
+            },
+            {
+              "id": "G002-2",
+              "en": "Our team records how much waste the library produces.",
+              "zh": "我们团队记录图书馆产生多少废弃物。",
+              "kind": "肯",
+              "provenance": {
+                "type": "confirmed",
+                "factIds": [
+                  "F04"
+                ]
+              }
+            },
+            {
+              "id": "G002-3",
+              "en": "I don't enjoy classes that only list definitions.",
+              "zh": "我不喜欢只罗列定义的课。",
+              "kind": "否",
+              "provenance": {
+                "type": "confirmed",
+                "factIds": [
+                  "F03"
+                ]
+              }
+            },
+            {
+              "id": "G002-4",
+              "en": "The most rewarding part is seeing our suggestions put into practice.",
+              "zh": "最有成就感的部分是看到我们的建议得到实践。",
+              "kind": "肯",
+              "provenance": {
+                "type": "confirmed",
+                "factIds": [
+                  "F04"
+                ]
+              }
+            },
+            {
+              "id": "G002-5",
+              "en": "What makes a group project useful to you?",
+              "zh": "对你来说，什么让一个小组项目有用？",
+              "kind": "问",
+              "provenance": {
+                "type": "scenario",
+                "factIds": []
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "part": 1,
+      "title": "Hometown & accommodation",
+      "subtitle": "家乡、迁居与居住环境",
+      "shortTitle": "家乡·住房",
+      "questions": [
+        "What do you enjoy about your daily life?",
+        "What would you like to change?"
+      ],
+      "practice": "选一句换成自己的真实信息，再开口说出一段回答。",
+      "startPage": 0,
+      "grammar": [
+        {
+          "id": "G006",
+          "title": "there is / there are：存在句",
+          "level": "A1",
+          "pattern": "There is + 单数/不可数；There are + 复数",
+          "note": "有/没有某物用 there be，比反复说“my hometown has”更自然。",
+          "page": 0,
+          "examples": [
+            {
+              "id": "G006-1",
+              "en": "There are several public parks near my hometown.",
+              "zh": "我的家乡附近有几座公园。",
+              "kind": "肯",
+              "provenance": {
+                "type": "confirmed",
+                "factIds": [
+                  "F02"
+                ]
+              }
+            },
+            {
+              "id": "G006-2",
+              "en": "There isn't much storage space in my campus room.",
+              "zh": "我在校园的房间没有多少储物空间。",
+              "kind": "否",
+              "provenance": {
+                "type": "confirmed",
+                "factIds": [
+                  "F02"
+                ]
+              }
+            },
+            {
+              "id": "G006-3",
+              "en": "Is there a quiet place to study near your home?",
+              "zh": "你家附近有安静的学习地点吗？",
+              "kind": "问",
+              "provenance": {
+                "type": "scenario",
+                "factIds": []
+              }
+            },
+            {
+              "id": "G006-4",
+              "en": "There's a recycling point outside our university library.",
+              "zh": "我们大学图书馆外有一个回收点。",
+              "kind": "肯",
+              "provenance": {
+                "type": "confirmed",
+                "factIds": [
+                  "F04"
+                ]
+              }
+            },
+            {
+              "id": "G006-5",
+              "en": "There aren't many cars on campus before eight.",
+              "zh": "八点以前校园里的汽车不多。",
+              "kind": "否",
+              "provenance": {
+                "type": "confirmed",
+                "factIds": [
+                  "F02"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "supplements": [
+    {
+      "id": "method",
+      "title": "看懂、跟读、变形、开口",
+      "subtitle": "用真实经历掌握结构",
+      "page": 0,
+      "body": "先理解例句，按意群大声读三遍，再换人物、时间和事实。最后用这一结构回答一个自己的真实问题。\n本演示全部人物和经历均为虚构，仅供测试框架。"
+    }
+  ]
+}

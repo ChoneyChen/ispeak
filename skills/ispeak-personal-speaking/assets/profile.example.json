@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "fictionalDemo": true,
+  "learning": {
+    "nativeLanguage": "zh-CN",
+    "targetLanguage": "en-GB",
+    "exam": "IELTS Speaking",
+    "targetBand": "7.5–8.0"
+  },
+  "facts": [
+    {
+      "id": "F01",
+      "topicIds": [
+        1,
+        11,
+        21
+      ],
+      "kind": "identity",
+      "status": "confirmed",
+      "text": "I am an environmental science student. I study how people affect the environment."
+    },
+    {
+      "id": "F02",
+      "topicIds": [
+        2,
+        7,
+        9,
+        10,
+        15,
+        24
+      ],
+      "kind": "experience",
+      "status": "confirmed",
+      "text": "I grew up in a small coastal city with several public parks. I now live on campus. My room has limited storage. There are few cars on campus before eight."
+    },
+    {
+      "id": "F03",
+      "topicIds": [
+        1,
+        3,
+        20,
+        21
+      ],
+      "kind": "preference",
+      "status": "confirmed",
+      "text": "I prefer practical examples and dislike memorising definitions without understanding them."
+    },
+    {
+      "id": "F04",
+      "topicIds": [
+        1,
+        6,
+        10,
+        14,
+        18,
+        23
+      ],
+      "kind": "experience",
+      "status": "confirmed",
+      "text": "I am taking part in a recycling audit at the university library. Our team records its waste and has a recycling point outside it. Some of our suggestions have been tried; the project is still ongoing."
+    }
+  ],
+  "avoid": [
+    "Use no real names or precise addresses. This entire example profile is fictional."
+  ]
+}
