@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="480" viewBox="0 0 1200 480" fill="none" role="img" aria-labelledby="title desc">
+<title id="title">iSpeak — 雅思口语和语法，打包一起练</title><desc id="desc">开源 Skill，把真实经历变成个性化口语句库、双语教材和 iPhone App。28 话题，140 语法点，700 句。</desc>
+<rect width="1200" height="480" rx="24" fill="#233F34"/>
+<path d="M820 0H1200V480H1040C950 330 875 170 820 0Z" fill="#2C4B3C"/>
+<g font-family="-apple-system,BlinkMacSystemFont,'PingFang SC','Microsoft YaHei',sans-serif">
+<rect x="48" y="39" width="165" height="29" rx="14.5" stroke="#748C6B"/><circle cx="64" cy="53" r="3" fill="#DEEBA9"/><text x="77" y="58" fill="#DEEBA9" font-size="10" letter-spacing="1.5">OPEN-SOURCE SKILL</text>
+<text x="48" y="117" fill="#FCFCF2" font-size="34" font-weight="650" letter-spacing="-1">iSpeak <tspan font-size="17" font-weight="400" fill="#B6C9AF">句屿</tspan></text>
+<text x="48" y="184" fill="#B9CAB0" font-size="12" letter-spacing="2">IELTS SPEAKING × GRAMMAR</text>
+<g font-family="'Songti SC','Noto Serif CJK SC',Georgia,serif" font-size="53" font-weight="600" fill="#FCFCF2"><text x="47" y="254">雅思口语和语法，</text><text x="47" y="322" fill="#DEEBA9">打包一起练。</text></g>
+<text x="49" y="369" fill="#BDCDB5" font-size="16">你的经历 → 个性化句库 → 教材 + iPhone App</text>
+<path d="M49 402H589" stroke="#4F6954"/>
+<text x="49" y="441" fill="#FCFCF2" font-size="22">28 <tspan fill="#B9CAB0" font-size="12">话题</tspan><tspan x="214">140 </tspan><tspan fill="#B9CAB0" font-size="12">语法点</tspan><tspan x="402">700 </tspan><tspan fill="#B9CAB0" font-size="12">中英句卡</tspan></text>
+<g transform="translate(670 58) rotate(2 237 180)">
+<rect x="7" y="9" width="470" height="360" rx="15" fill="#1A3327"/>
+<rect width="470" height="360" rx="15" fill="#F6F5EE"/>
+<path d="M0 53H470" stroke="#D8DECE"/>
+<text x="25" y="33" fill="#315C4C" font-family="ui-monospace,SFMono-Regular,monospace" font-size="12">✳ ispeak-personal-speaking</text>
+<rect x="373" y="18" width="71" height="21" rx="4" stroke="#A8BA9C"/><text x="385" y="32" fill="#315C4C" font-size="9" letter-spacing="1.4">SKILL.md</text>
+<text x="27" y="88" fill="#8A6451" font-size="11" letter-spacing="1.2">PART 2 · TELL YOUR STORY</text>
+<text x="27" y="126" fill="#334A3A" font-size="14">组织过一次分享，没提前检查设备。</text>
+<text x="27" y="159" fill="#8A6451" font-size="11">↓ 第三条件句 · 反思过去</text>
+<path d="M27 200H252M27 267H285" stroke="#DEEBA9" stroke-width="12"/>
+<text x="27" y="203" fill="#263E32" font-family="Georgia,serif" font-size="27"><tspan x="27">If I’d checked the equipment</tspan><tspan x="27" dy="34">earlier, I would have felt</tspan><tspan x="27" dy="34">more relaxed.</tspan></text>
+<text x="27" y="304" fill="#74806E" font-size="11">如果我早点检查设备，当时就会更从容。</text>
+<path d="M27 325H443" stroke="#D8DECE"/><text x="27" y="347" fill="#74806E" font-size="10">虚构示例 · 用你的真实经历，练你想说的话</text>
+</g></g>
+</svg>

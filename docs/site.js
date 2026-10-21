@@ -1,9 +1,62 @@
-const cards=[{en:'There are plenty of green spaces around my hometown.',zh:'我的家乡周边有不少绿地。'},{en:"There isn't much nightlife in some quieter neighbourhoods.",zh:'一些安静的社区夜生活不算丰富。'},{en:'Are there any parks within walking distance of your home?',zh:'你家步行范围内有公园吗？'},{en:"There's a noticeable difference between my hometown and the city where I study.",zh:'我的家乡和我求学的城市之间有明显差异。'},{en:"There aren't as many familiar faces when you move to a new city.",zh:'搬去新城市后就没那么多熟面孔了。'}];
-let index=0,mode='learn',revealed=false,busy=false;
-const $=id=>document.getElementById(id),card=$('demo-card'),reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
-function render(){const item=cards[index];$('demo-en').textContent=item.en;$('demo-zh').textContent=item.zh;$('demo-en').hidden=mode==='recall'&&!revealed;$('demo-grammar').hidden=mode==='recall';$('demo-cue').textContent=mode==='recall'?(revealed?'CHECK YOUR ANSWER':'SAY IT IN ENGLISH'):'SPEAK IT · OWN IT';$('demo-zh').style.fontSize=mode==='recall'?'21px':'';$('demo-zh').style.paddingTop=mode==='recall'?'35px':'';$('demo-index').textContent=`G006 · 0${index+1} / 05`;$('demo-next').replaceChildren(document.createTextNode(mode==='recall'&&!revealed?'查看答案':'下一句'),Object.assign(document.createElement('span'),{textContent:mode==='recall'&&!revealed?'◉':'→'}));document.querySelectorAll('.mini-progress i').forEach((x,i)=>x.style.background=i<=index?'#315c4c':'');}
-function next(){if(busy)return;if(mode==='recall'&&!revealed){revealed=true;render();return;}busy=true;card.style.transition=reduced?'none':'transform .22s ease-in, opacity .22s';card.style.transform='translateX(-85px) rotate(-8deg)';card.style.opacity='0';setTimeout(()=>{index=(index+1)%cards.length;revealed=false;render();card.style.transition='none';card.style.transform='translateX(35px)';requestAnimationFrame(()=>requestAnimationFrame(()=>{card.style.transition=reduced?'none':'transform .55s cubic-bezier(.2,1.3,.35,1), opacity .4s';card.style.transform='';card.style.opacity='1';busy=false;}));},reduced?0:180);}
-$('demo-next').addEventListener('click',next);card.addEventListener('keydown',e=>{if(e.key==='ArrowLeft'){e.preventDefault();next();}});
-document.querySelectorAll('[data-mode]').forEach(button=>button.addEventListener('click',()=>{mode=button.dataset.mode;revealed=false;document.querySelectorAll('[data-mode]').forEach(b=>b.classList.toggle('selected',b===button));render();}));
-let start=null;card.addEventListener('pointerdown',e=>{start={x:e.clientX,y:e.clientY};});card.addEventListener('pointerup',e=>{if(start&&start.x-e.clientX>45&&Math.abs(e.clientY-start.y)<Math.abs(e.clientX-start.x))next();start=null;});card.addEventListener('pointercancel',()=>start=null);
-$('copy-prompt').addEventListener('click',async()=>{try{await navigator.clipboard.writeText($('skill-prompt').textContent);$('toast').textContent='已复制，带上你的经历就能开始。';$('toast').classList.add('shown');setTimeout(()=>$('toast').classList.remove('shown'),2500);}catch{$('toast').textContent='请选中下方提示词复制。';$('toast').classList.add('shown');setTimeout(()=>$('toast').classList.remove('shown'),2500);}});render();
+const examples = {
+  1: {
+    experience: '平时上班前会跑步，跑完觉得脑子更清醒。',
+    grammar: '一般现在时 + because · 习惯与原因',
+    sentence: '<mark>I usually go</mark> for a run before work <mark>because it helps me</mark> clear my head.',
+    translation: '我通常在上班前跑步，因为这能帮我理清思绪。',
+    purpose: '回答日常喜好，再自然地补一句为什么。'
+  },
+  2: {
+    experience: '组织过一次分享，没提前检查设备，临场有点慌。',
+    grammar: '第三条件句 · 反思过去',
+    sentence: '<mark>If I’d checked</mark> the equipment earlier, <mark>I would have felt</mark> more relaxed.',
+    translation: '如果我早点检查设备，当时就会更从容。',
+    purpose: '讲完发生了什么，再说“如果重来会怎样”。'
+  },
+  3: {
+    experience: '我觉得线上工具方便协作，但面对面交流依然重要。',
+    grammar: 'while 让步从句 · 平衡观点',
+    sentence: '<mark>While online tools make</mark> teamwork easier, face-to-face conversations <mark>still matter</mark>.',
+    translation: '虽然线上工具让协作更容易，面对面交流仍然重要。',
+    purpose: '讨论社会话题时，承认一面，再表达自己的判断。'
+  }
+};
+const tabs = [...document.querySelectorAll('[data-part]')];
+function showExample(part) {
+  const example = examples[part];
+  for (const key of ['experience', 'grammar', 'translation', 'purpose']) {
+    document.getElementById(key).textContent = example[key];
+  }
+  // Fixed teaching examples; this markup never contains user input.
+  document.getElementById('sentence').innerHTML = example.sentence;
+  for (const tab of tabs) {
+    const selected = tab.dataset.part === String(part);
+    tab.setAttribute('aria-selected', String(selected));
+    tab.tabIndex = selected ? 0 : -1;
+  }
+  document.getElementById('example-panel').setAttribute('aria-labelledby', `tab-part${part}`);
+}
+tabs.forEach((tab, index) => {
+  tab.addEventListener('click', () => showExample(tab.dataset.part));
+  tab.addEventListener('keydown', event => {
+    const offsets = { ArrowLeft: -1, ArrowRight: 1 };
+    if (!(event.key in offsets) && event.key !== 'Home' && event.key !== 'End') return;
+    event.preventDefault();
+    const next = event.key === 'Home' ? 0 : event.key === 'End' ? tabs.length - 1 : (index + offsets[event.key] + tabs.length) % tabs.length;
+    showExample(tabs[next].dataset.part);
+    tabs[next].focus();
+  });
+});
+let toastTimer;
+document.getElementById('copy-prompt').addEventListener('click', async () => {
+  const toast = document.getElementById('toast');
+  try {
+    await navigator.clipboard.writeText(document.getElementById('skill-prompt').textContent);
+    toast.textContent = '已复制，去新聊天里讲讲你自己吧。';
+  } catch {
+    toast.textContent = '暂时无法复制，请选中提示词手动复制。';
+  }
+  toast.classList.add('visible');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => toast.classList.remove('visible'), 3200);
+});
