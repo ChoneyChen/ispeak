@@ -10,7 +10,7 @@
 
 <a href="https://github.com/ChoneyChen/ispeak/releases/latest/download/ispeak-personal-speaking.zip"><img src="skills/ispeak-personal-speaking/assets/skill-download.svg" width="210" height="48" alt="下载 Skill · 免费开源"></a>
 
-[宣传官网](https://choneychen.github.io/ispeak/) · [直接使用通用版](https://choneychen.github.io/ispeak/app/) · [查看 Skill 指令](skills/ispeak-personal-speaking/SKILL.md)
+[官网](https://choneychen.github.io/ispeak/) · [直接使用通用版](https://choneychen.github.io/ispeak/app/) · [查看 Skill 指令](skills/ispeak-personal-speaking/SKILL.md)
 
 **28 个话题　 /　 140 个语法点　 /　 700 张中英句卡　 /　 MIT 开源**
 
