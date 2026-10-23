@@ -1,4 +1,4 @@
-const CACHE='ispeak-general-v3';
+const CACHE='ispeak-general-v4';
 const URLS=['./','./index.html','./app.css','./app.js','./engine.mjs','./manifest.webmanifest','../assets/general-curriculum.json','../assets/icon-192.png','../assets/icon-512.png','../assets/favicon.svg'];
 const APP_BASE=new URL('./',self.location.href).href;
 const ALLOWED=new Set(URLS.map(path=>new URL(path,self.location.href).href));

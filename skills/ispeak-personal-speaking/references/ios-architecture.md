@@ -10,7 +10,7 @@
 | `Curriculum.swift` | Decode/validate stable models, expose counts | Data-driven counts |
 | `LearningStore.swift` | Learn, unlock, due dates, mastery, atomic persistence | Same rules for every user |
 | `StudyHomeView`, `LearningSessionView` | Resume, one-card study, left swipe, section completion | Same UI, supplied sentences |
-| `ReviewViews` | Chinese-only cue, reveal, self-grade, error rotation | Same state machine |
+| `ReviewViews` | Daily plan, mixed recall, reveal, self-grade, reinforcement | Same state machine |
 | `LibraryViews` | Search, preview, references, optional PDF | Reads the user's content |
 | `DesignSystem.swift` | Warm paper, forest/lime palette, spring, haptics, speech | Shared reusable design |
 
@@ -18,23 +18,26 @@ The application has Study, Recall and Library entries. Read-only library preview
 
 ## State machine invariants
 
-- Each accepted learn action saves synchronously before its visual exit. Relaunch resumes at the first unlearned sentence.
-- A grammar section is locked for recall until all five example IDs are learned. Completing the section releases all five, not just the last one.
-- A recall session snapshots current due items. The answer is absent from the pre-reveal view hierarchy; no English grammar pattern or English speech button leaks it.
-- Incorrect leaves the persisted due date, anchor and review stage unchanged, then rotates the sentence to the session's tail. It can be revisited or the user can leave and return later.
-- The first correct answer establishes the anchor. Subsequent targets are **anchor + 7 / +14 / +30 calendar days**, not 7+14+30 days from each last answer. Calendar arithmetic preserves local wall-clock time across daylight saving changes.
-- Review stages: 0 initial → 1 waiting day 7 → 2 waiting day 14 → 3 waiting day 30 → 4 complete. Passing day 30 finishes the automatic cycle. Mastered/斩 is a separate permanent exclusion state.
-- Overdue checkpoints remain due. If a very late answer advances to another already-past checkpoint, the item remains due when the home page rechecks; it is not silently skipped to “complete”. The UI explains dates from the first correct answer.
-- Mastered excludes the item forever unless the user explicitly resets progress. It remains readable in the library.
-- Saves use atomic file writes. Corrupt input is kept and protected from overwrite; save errors appear inside full-screen sessions as well as on the root screen. A recoverable write error offers retry.
+- Save an accepted study/grade action before its visual transition; resume study at the first unlearned ID.
+- Unlock a section's recall only after every example is learned. Library preview does not mark learning complete.
+- Recall starts with Chinese only; reveal unlocks English, grammar details, self-grading and speech.
+- Daily targets, admitted cards, unique completions, retries and settings persist. New/old mixing and review-first ordering use the same engine.
+- Incorrect answers need two separated confirmations. Hard answers reduce the interval or retain short-term work. Never show a waiting retry as completed.
+- Feedback scheduling uses calendar days from each actual successful answer. Legacy 7/14/30 dates, already completed cycles and cuts survive migration; new cards continue longer-term review.
+- Mastered permanently excludes the item, while preserving library access.
+- Upgrade to schema 2 only after backing up v1 bytes. Corrupt input and failed backups protect the original file; recoverable writes expose a retry.
 
-Default persisted file: the app sandbox's Application Support/iSpeak/progress.json. UI tests use a separate iSpeakUITests/progress.json selected by launch arguments. Never point tests at a real user's progress file.
+Read [recall-design.md](recall-design.md) for daily caps, mixing, exact retry gates, interval parameters, source research and migration. Do not reintroduce the old fixed-anchor schedule when modifying current apps.
+
+Default persisted file: the app sandbox's Application Support/iSpeak/progress.json. UI tests use isolated iSpeakUITests/progress.json. Never point tests at a user's real progress.
 
 ## Interaction details already solved
 
-The card's drag only advances when horizontal motion dominates and the left threshold/prediction is met. Vertical scrolling of long explanations does not count as learning. Separate interaction lock from opacity/offset; otherwise the card vanishes before the spring can be seen. Dynamic text may scroll inside the card. Reduced Motion disables the main transitions. Native AVSpeechSynthesizer provides English speech where an OS voice is available; no microphone permission is needed.
+The card's drag only advances when horizontal motion dominates and the left threshold/prediction is met. Vertical scrolling of long explanations does not count as learning. Separate interaction lock from opacity/offset; otherwise the card vanishes before the spring can be seen. Normal phone cards use fitting layouts with fixed actions. Long content and accessibility text may scroll inside the card; do not truncate the actual sentence to force a fit. Reduced Motion disables the main transitions. Native AVSpeechSynthesizer provides English speech where an OS voice is available; no microphone permission is needed.
 
 Generated/source PDF is optional. `render_book.py --pdf` produces both Guide.pdf and a newly paginated curriculum.json. The app uses those page anchors and PDFKit; it hides all source controls when Guide.pdf is absent. Do not show a missing-file button for an HTML-only export.
+
+Optional native local reminders are handled by `ReminderManager.swift`. Request notification permission only after the user enables reminders; never put private examples in notification text.
 
 ## Build and signing
 

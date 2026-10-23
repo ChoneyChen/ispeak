@@ -18,7 +18,7 @@ struct LearningSessionView: View {
                 RoundButton(symbol: "xmark", label: "退出学习") { dismiss() }
                 VStack(alignment: .leading, spacing: 4) {
                     Text(item?.chapter.shortTitle ?? "学习完成").font(.system(size: 15, weight: .semibold))
-                    Text("PART \(item?.chapter.part ?? 1)  /  一次学会一个结构")
+                    Text("Part \(item?.chapter.part ?? 1) · 一次学会一个结构")
                         .font(.system(size: 10, design: .monospaced)).foregroundStyle(Color.mutedInk)
                 }
                 Spacer(minLength: 0)
@@ -60,12 +60,12 @@ struct LearningSessionView: View {
                 }.padding(.bottom, 10)
                 VStack(spacing: 13) {
                     HStack {
-                        Text("\(item.grammar.id)  /  \(String(format: "%02d", item.index + 1)) OF \(item.grammar.examples.count)")
+                        Text("本节第 \(item.index + 1) / \(item.totalInGrammar) 句")
                             .font(.system(size: 10, design: .monospaced)).tracking(1.2)
                         Spacer()
                         Label("向左轻扫", systemImage: "arrow.left").font(.system(size: 11))
                     }.foregroundStyle(Color.mutedInk)
-                    PrimaryButton(title: item.index == item.grammar.examples.count - 1 ? "学完这节" : "下一句") { advance() }
+                    PrimaryButton(title: item.index == item.totalInGrammar - 1 ? "学完这节" : "下一句") { advance() }
                         .disabled(advancing).accessibilityIdentifier("nextSentence")
                 }
             } else {
@@ -97,7 +97,7 @@ struct LearningSessionView: View {
                 Image(systemName: "checkmark").font(.system(size: 41, weight: .light)).foregroundStyle(Color.forest)
                 Image(systemName: "sparkle").font(.system(size: 22)).foregroundStyle(Color.forest).offset(x: 77, y: -56)
             }
-            Eyebrow(text: "ONE STRUCTURE CLOSER")
+            Text("又学会一种表达").font(.system(size: 12)).foregroundStyle(Color.mutedInk)
             Text("这一节，学会了。") .font(.system(size: 30, weight: .medium, design: .serif))
             Text(grammar.title).font(.system(size: 15, weight: .medium)).multilineTextAlignment(.center)
             Text("\(grammar.examples.count) 个例句已加入背诵库\n先用中文提示，试着把它们说出来。")
@@ -143,48 +143,59 @@ struct SentenceCard: View {
     let grammar: GrammarPoint
     let sentence: Sentence
     @ObservedObject var speaker: Speaker
+    @Environment(\.dynamicTypeSize) private var dynamicType
     @ScaledMetric(relativeTo: .title) private var englishSize = 28.0
+    @ScaledMetric(relativeTo: .body) private var chineseSize = 16.0
     var body: some View {
-        ScrollView(showsIndicators: false) {
-            VStack(alignment: .leading, spacing: 22) {
-                VStack(alignment: .leading, spacing: 13) {
-                    HStack {
-                        Eyebrow(text: "THE GRAMMAR")
-                        Spacer()
-                        Text(grammar.level).font(.system(size: 10, weight: .medium, design: .monospaced))
-                            .padding(.horizontal, 9).padding(.vertical, 5).background(Color.lime.opacity(0.6), in: Capsule())
-                    }
-                    Text(grammar.title).font(.system(size: 21, weight: .semibold)).lineSpacing(4).fixedSize(horizontal: false, vertical: true)
-                    Text(grammar.pattern).font(.system(size: 14, weight: .medium, design: .monospaced))
-                        .foregroundStyle(Color.forest).lineSpacing(5).fixedSize(horizontal: false, vertical: true)
-                    Text(grammar.note).font(.system(size: 12)).foregroundStyle(Color.mutedInk).lineSpacing(5)
-                }
-                Rectangle().fill(Color.warmLine).frame(height: 0.7)
-                VStack(alignment: .leading, spacing: 18) {
-                    HStack {
-                        Text(sentence.kind == "问" ? "问一句" : sentence.kind == "否" ? "否定表达" : "肯定表达")
-                            .font(.system(size: 10, weight: .medium)).foregroundStyle(Color.mutedInk)
-                        if sentence.isPracticeScenario {
-                            Text("情境练习").font(.system(size: 10)).foregroundStyle(Color.clay)
-                        }
-                        Spacer()
-                        Button { speaker.speak(sentence.en) } label: {
-                            Image(systemName: "speaker.wave.2").font(.system(size: 16)).foregroundStyle(Color.forest)
-                                .frame(width: 44, height: 36).background(Color.paper, in: Capsule())
-                        }.buttonStyle(PressStyle()).accessibilityLabel("朗读英文例句")
-                    }
-                    Text(sentence.en).font(.system(size: englishSize, weight: .regular, design: .serif))
-                        .lineSpacing(5).fixedSize(horizontal: false, vertical: true).textSelection(.enabled)
-                        .accessibilityIdentifier("englishSentence")
-                    Text(sentence.zh).font(.system(size: 16)).lineSpacing(6).foregroundStyle(Color.mutedInk)
-                        .fixedSize(horizontal: false, vertical: true)
-                }
-            }.padding(25).padding(.bottom, 8)
+        GeometryReader { _ in
+            if dynamicType.isAccessibilitySize {
+                ScrollView(showsIndicators: false) { content(scale: 1) }
+            } else {
+                ViewThatFits(in: .vertical) {
+                    content(scale: 1).fixedSize(horizontal: false, vertical: true)
+                    content(scale: 0.85).fixedSize(horizontal: false, vertical: true)
+                    ScrollView(showsIndicators: false) { content(scale: 0.85) }
+                }.frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
+            }
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(Color.white, in: RoundedRectangle(cornerRadius: 30))
-        .overlay(RoundedRectangle(cornerRadius: 30).stroke(Color.warmLine.opacity(0.7), lineWidth: 0.7))
+        .background(Color.white, in: RoundedRectangle(cornerRadius: 28))
+        .overlay(RoundedRectangle(cornerRadius: 28).stroke(Color.warmLine.opacity(0.7), lineWidth: 0.7))
         .shadow(color: Color.ink.opacity(0.035), radius: 18, y: 10)
-        .foregroundStyle(Color.ink)
+        .foregroundStyle(Color.ink).clipShape(RoundedRectangle(cornerRadius: 28))
+    }
+    private func content(scale: CGFloat) -> some View {
+        VStack(alignment: .leading, spacing: 19 * scale) {
+            VStack(alignment: .leading, spacing: 11 * scale) {
+                HStack {
+                    Text("语法要点").font(.system(size: 11, weight: .medium)).foregroundStyle(Color.mutedInk)
+                    Spacer()
+                    Text(grammar.level).font(.system(size: 10, weight: .medium))
+                        .padding(.horizontal, 9).padding(.vertical, 5).background(Color.lime.opacity(0.6), in: Capsule())
+                }
+                Text(grammar.title).font(.system(size: 21 * scale, weight: .semibold)).lineSpacing(3).fixedSize(horizontal: false, vertical: true)
+                Text(grammar.pattern).font(.system(size: 14 * scale, weight: .medium, design: .serif))
+                    .foregroundStyle(Color.forest).lineSpacing(4).fixedSize(horizontal: false, vertical: true)
+                Text(grammar.note).font(.system(size: 12 * scale)).foregroundStyle(Color.mutedInk).lineSpacing(4)
+                    .fixedSize(horizontal: false, vertical: true)
+            }
+            Rectangle().fill(Color.warmLine).frame(height: 0.7)
+            VStack(alignment: .leading, spacing: 15 * scale) {
+                HStack {
+                    Text(sentence.isPracticeScenario ? "情境练习" : "开口练一句")
+                        .font(.system(size: 10, weight: .medium)).foregroundStyle(Color.mutedInk)
+                    Spacer()
+                    Button { speaker.speak(sentence.en) } label: {
+                        Image(systemName: "speaker.wave.2").font(.system(size: 16)).foregroundStyle(Color.forest)
+                            .frame(width: 44, height: 40).background(Color.paper, in: Capsule())
+                    }.buttonStyle(PressStyle()).accessibilityLabel("朗读英文例句")
+                }
+                Text(sentence.en).font(.system(size: englishSize * scale, weight: .regular, design: .serif))
+                    .lineSpacing(4 * scale).fixedSize(horizontal: false, vertical: true).textSelection(.enabled)
+                    .accessibilityIdentifier("englishSentence")
+                Text(sentence.zh).font(.system(size: chineseSize * scale)).lineSpacing(5).foregroundStyle(Color.mutedInk)
+                    .fixedSize(horizontal: false, vertical: true)
+            }
+        }.padding(24 * scale).frame(maxWidth: .infinity, alignment: .leading)
     }
 }

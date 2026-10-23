@@ -70,11 +70,12 @@ struct RoundButton: View {
 
 struct MiniProgress: View {
     let value: Double
+    var color: Color = .forest
     var body: some View {
         GeometryReader { geo in
             ZStack(alignment: .leading) {
                 Capsule().fill(Color.warmLine.opacity(0.7))
-                Capsule().fill(Color.forest).frame(width: max(0, geo.size.width * min(1, value)))
+                Capsule().fill(color).frame(width: max(0, geo.size.width * min(1, value)))
             }
         }.frame(height: 4)
     }
@@ -131,5 +132,16 @@ struct SaveStatusBanner: View {
                 }
             }.foregroundStyle(Color.ink).padding(12).background(Color.lime)
         }
+    }
+}
+
+/// Normal phone sizes stay on one page; large accessibility text can still scroll.
+struct AdaptivePage<Content: View>: View {
+    @ViewBuilder var content: () -> Content
+    var body: some View {
+        ViewThatFits(in: .vertical) {
+            content().fixedSize(horizontal: false, vertical: true)
+            ScrollView(showsIndicators: false) { content() }
+        }.frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
     }
 }
